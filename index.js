@@ -37,3 +37,12 @@ function strong_cmp(req_meta, res_meta) {
   return match
 }
 
+function date_cmp(req_meta, res_meta) {
+  let match
+  if (HttpDate.isValid(req_meta) && HttpDate.isValid(res_meta)) {
+    match = (new HttpDate(req_meta).getTime() < new HttpDate(res_meta).getTime()) 
+  } else {
+    match = false
+  }
+  return match
+}
