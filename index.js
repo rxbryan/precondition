@@ -46,3 +46,27 @@ function date_cmp(req_meta, res_meta) {
   }
   return match
 }
+
+function isConditional(req) {
+  let value = req.headers['if-match'] || req.headers['if-none-match'] ||
+    req.headers['if-modified-since'] || req.headers['if-unmodified-since'] || 
+    req.headers['if-range']
+
+    return Boolean(value)
+}
+
+function isRange(req) {
+  return Boolean(req.headers['if-range'])
+}
+
+function isCacheRevalidation(req) {
+  return Boolean(req.headers['if-modified-since'] || req.headers['if-none-match'])
+}
+
+function condition(argument) {
+  // body...
+}
+
+precondition.isRange = isRange
+precondition.isCacheRevalidation = isCacheRevalidation
+precondition.isConditional = isConditional
