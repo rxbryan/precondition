@@ -1,15 +1,24 @@
 {
   "name": "precondition",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "nodejs module for evaluting conditional request",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --detectOpenHandles"
   },
   "repository": {
     "type": "git",
-    "url": "-"
+    "url": "https://github.com/rxbryan/precondition.git"
   },
+  "homepage": "https://github.com/rxbryan/precondition#readme",
+  "engines": {
+    "node": ">= 12"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "HISTORY.md"
+  ],
   "keywords": [
     "conditional",
     "requests",
@@ -17,5 +26,11 @@
     "rfc 7232"
   ],
   "author": "Bryan Elee",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http-date": "^1.0.7"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
