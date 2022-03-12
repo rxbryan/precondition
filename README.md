@@ -14,7 +14,7 @@ $ npm install precondition
 ## Usage
 
 ```js
-var precondition = require('precondition')
+var precondition = require('http-preconditions')
 ```
 ### new precondition(req, options)
 
@@ -41,7 +41,7 @@ Resource last-modified date as http-date string
 ### example
 
 ```js
-var Precondition = require('precondition')
+var precondition = require('http-preconditions')
 
 var precondition = new precondition(req, {weak: true, etag: 'W/blahblahblah'})
 ```
@@ -49,7 +49,7 @@ var precondition = new precondition(req, {weak: true, etag: 'W/blahblahblah'})
 Returns the result of evaluating the preconditions in the request
 
 ```js
-var Precondition = require('precondition')
+var precondition = require('http-preconditions')
 
 var precondition = new precondition(req, {weak: true, etag: 'W/blahblahblah'})
 
@@ -77,3 +77,5 @@ Returns `true` if request is a conditional request
 # Author
 
 [Bryan Elee](https://github.com/rxbryan) ([rxbryn@gmail.com](mailto:rxbryn@gmail.com))
+
+[npm-url]: https://www.npmjs.com/package/http-preconditions

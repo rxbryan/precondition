@@ -1,5 +1,5 @@
 {
-  "name": "precondition",
+  "name": "http-preconditions",
   "version": "1.0.0",
   "description": "nodejs module for evaluting conditional request",
   "main": "index.js",
@@ -17,7 +17,8 @@
   "files": [
     "index.js",
     "README.md",
-    "HISTORY.md"
+    "HISTORY.md",
+    "License"
   ],
   "keywords": [
     "conditional",
