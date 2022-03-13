@@ -1,4 +1,5 @@
 [![NPM Version][npm-image]][npm-url]
+[![codecov](https://codecov.io/gh/rxbryan/precondition/branch/main/graph/badge.svg?token=WD6A9MW66U)](https://codecov.io/gh/rxbryan/precondition)
 
 # precondition
 
