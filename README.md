@@ -1,3 +1,5 @@
+[![NPM Version][npm-image]][npm-url]
+
 # precondition
 
 This module provides utilites for evaluating conditional requests (as defined in RFC 7232)
@@ -9,7 +11,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install precondition
+$ npm install http-preconditions
 ```
 ## Usage
 
@@ -79,3 +81,5 @@ Returns `true` if request is a conditional request
 [Bryan Elee](https://github.com/rxbryan) ([rxbryn@gmail.com](mailto:rxbryn@gmail.com))
 
 [npm-url]: https://www.npmjs.com/package/http-preconditions
+[npm-image]: https://img.shields.io/badge/npm-v6.14-blue
+[http-date-image]: https://img.shields.io/badge/http-preconditions-v1.0.0-success
