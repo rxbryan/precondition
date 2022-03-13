@@ -1,6 +1,6 @@
 {
   "name": "http-preconditions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodejs module for evaluting conditional request",
   "main": "index.js",
   "scripts": {
